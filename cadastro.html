@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="cadastro.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Página de Cadastro</h1>
+    </header>
+    <main>
+        <form action="index.html">
+            <label for="">
+                <h2>Nome Completo:</h2>
+                <input class="principal" type="text" autofocus name="nome" placeholder="Nome Completo" required minlength="10" onfocus="this.value='';">
+            </label> <br>
+
+            <label for="">
+                <h2>E-mail: </h2>
+                <input class="principal" type="email" name="email" placeholder="Seu E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="endereço de e-mail" onfocus="this.value='';">
+            </label> <br>
+
+            <label for="">
+                <h2>Celular: </h2>
+                <input class="principal" type="tel" name="celular" placeholder="Seu número de celular" required minlength="6" onfocus="this.value='';" maxlength="15" >
+            </label>
+
+            <label for="">
+                <h2>Data de Nascimento:</h2>
+                <input class="principal" type="date" name="data" placeholder="Data de Nascimento" required>
+            </label>
+
+            <label for="">
+                <h2>Senha:</h2>
+                <input class="principal" type="password" name="senha" placeholder="Sua senha" required minlength="8" onfocus="this.value='';"> <br>
+            </label>
+
+            <button type="button" onclick="Evento()">Cadastrar</button>
+
+            <script>
+                function Evento(){
+                    alert('Conta cadastrada com sucesso!')
+                }
+            </script>
+
+            <a href="index.html">Voltar ao menu inicial</a>
+        </form>
+    </main>
+
+    <footer>
+        <p>Site criado por <a id="final" href="https://www.linkedin.com/in/cleivan-j%C3%BAnior/" target="_blank" >Cleivan Júnior</a></p>
+    </footer>
+</body>
+</html>
